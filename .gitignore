@@ -1,2 +1,5 @@
 dropbox/
 dropbox
+
+*.pyc
+_ext/
