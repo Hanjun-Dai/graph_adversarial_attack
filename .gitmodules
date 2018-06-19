@@ -1,0 +1,3 @@
+[submodule "pytorch_structure2vec"]
+	path = pytorch_structure2vec
+	url = git@github.com:Hanjun-Dai/pytorch_structure2vec
