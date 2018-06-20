@@ -23,6 +23,33 @@ Finally the folder structure should look like this:
     |__  pytorch_structure2vec
     |__  dropbox
     |__  |__ data
-    |    |__ ......
+    |    |__ scratch
     |......
+    
+Optionally, you can use the data generator under ``code/data_generator`` to generate the synthetic data.
+
+# 2. install dependencies and build c++ backend
+
+The current code depends on pytorch 0.3.1, cffi and CUDA 9.1. Please install using the following command (for linux):
+
+    pip install http://download.pytorch.org/whl/cu91/torch-0.3.1-cp27-cp27mu-linux_x86_64.whl 
+    pip install cffi
+    
+The c++ code needs to be built first:
+
+    cd pytorch_structure2vec/s2v_lib
+    make
+    cd code/common
+    make
+
+# 3. Train the graph classification and node classification model (our attack target)
+
+If you want to retrain the target model, go to either ``code/graph_classification`` or ``code/node_classification`` and run the script in train mode. For example:
+
+    cd code/graph_classification
+    ./run_er_components.sh -phase train
+
+You can also use the pretrained model that is the same as used in this paper, under the folder ``dropbox/scratch/results``
+
+    
     
