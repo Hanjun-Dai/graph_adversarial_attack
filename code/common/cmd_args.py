@@ -39,7 +39,8 @@ cmd_opt.add_argument('-feat_dim', type=int, default=0, help='dimension of node f
 cmd_opt.add_argument('-fold', type=int, default=1, help='fold (1..10)')
 
 # for attack 
-cmd_opt.add_argument('-instance_id', type=int, default=None, help='id of graph or node index (transductive setting)')
+cmd_opt.add_argument('-idx_start', type=int, default=None, help='id of graph or node index')
+cmd_opt.add_argument('-num_instances', type=int, default=None, help='num of samples for attack, in genetic algorithm')
 cmd_opt.add_argument('-num_steps', type=int, default=100000, help='rl training steps')
 cmd_opt.add_argument('-targeted', type=int, default=0, help='0/1 target attack or not')
 cmd_opt.add_argument('-frac_meta', type=float, default=0, help='fraction for meta rl learning')
@@ -53,12 +54,15 @@ cmd_opt.add_argument('-num_mod', type=int, default=1, help='number of modificati
 cmd_opt.add_argument('-population_size', type=int, default=100, help='population size')
 cmd_opt.add_argument('-cross_rate', type=float, default=0.1, help='cross_rate')
 cmd_opt.add_argument('-mutate_rate', type=float, default=0.2, help='mutate rate')
+cmd_opt.add_argument('-rounds', type=int, default=10, help='rounds of evolution')
 
 # for node attack
 cmd_opt.add_argument('-bilin_q', type=int, default=0, help='bilinear q or not')
 cmd_opt.add_argument('-mlp_hidden', type=int, default=64, help='mlp hidden layer size')
 cmd_opt.add_argument('-n_hops', type=int, default=2, help='attack range')
 
+# for defence
+cmd_opt.add_argument('-del_rate', type=float, default=0, help='rate of deleting edge')
 
 cmd_args, _ = cmd_opt.parse_known_args()
 
