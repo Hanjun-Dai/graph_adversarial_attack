@@ -34,7 +34,7 @@ Optionally, you can use the data generator under ``code/data_generator`` to gene
 The current code depends on pytorch 0.3.1, cffi and CUDA 9.1. Please install using the following command (for linux):
 
     pip install http://download.pytorch.org/whl/cu91/torch-0.3.1-cp27-cp27mu-linux_x86_64.whl 
-    pip install cffi
+    pip install cffi==1.11.2
     
 The c++ code needs to be built first:
 
