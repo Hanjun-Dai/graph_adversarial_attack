@@ -77,7 +77,7 @@ If you encountered some problems like:　`AttributeError: 'Graph' object has no 
 - certifi    2018.11.29
 - cffi       1.11.2
 - decorator  4.3.2
-- networkx   2.2
+- networkx   1.9.1
 - numpy      1.16.1
 - pip        19.0.1
 - pycparser  2.19
