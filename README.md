@@ -70,4 +70,20 @@ For example, to use Q-leaning to attack the graph classification method, do the 
       year={2018}
     }
 
+### Appendix
+If you encountered some problems like:　`AttributeError: 'Graph' object has no attribute '_node'`, maybe you should checkout the dependencies. Here is a sample dependencies that I have tested can work.
+
+#### Dependencies
+- certifi    2018.11.29
+- cffi       1.11.2
+- decorator  4.3.2
+- networkx   2.2
+- numpy      1.16.1
+- pip        19.0.1
+- pycparser  2.19
+- PyYAML     3.13
+- setuptools 40.7.3
+- torch      0.3.1
+- tqdm       4.31.1
+- wheel      0.32.3
 
