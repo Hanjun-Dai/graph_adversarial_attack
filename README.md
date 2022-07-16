@@ -8,7 +8,7 @@ First clone the repo recursively, since it depends on another repo (https://gith
 
     git clone git@github.com:Hanjun-Dai/graph_adversarial_attack --recursive
 
-(BTW if you have trouble downloading it because of permission issues, please see [this issue](https://ai.googleblog.com/2021/05/kelm-integrating-knowledge-graphs-with.html) )
+(BTW if you have trouble downloading it because of permission issues, please see [this issue](https://github.com/Hanjun-Dai/graph_adversarial_attack/issues/2) )
 
 Then download the data using the following dropbox link:
 
